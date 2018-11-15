@@ -1,0 +1,18 @@
+int digitalSensor=2;
+int pumpPin=8;
+
+void setup()
+{
+pinMode(digitalSensor,INPUT);
+pinMode(pumpPin,OUTPUT);
+}
+void loop()
+{
+if (digitalRead(digitalSensor)==HIGH)
+{
+digitalWrite(pumpPin,HIGH);
+delay(1500);
+digitalWrite(pumpPin,Low);
+}
+delay(3600000);
+}
